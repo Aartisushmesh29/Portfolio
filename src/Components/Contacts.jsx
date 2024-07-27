@@ -23,16 +23,17 @@ const Contacts = () => {
     e.preventDefault();
 
     emailjs
-    .sendForm('service_rv5romm', '__ejs-test-mail-service__', form.current, {
-      publicKey: 'ynb59tIxmkGjgNXeU',
-    })
+    .sendForm( import.meta.env.VITE_REACT_APP_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID,
+      form.current,
+      import.meta.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY)
     .then(
       () => {
         console.log('SUCCESS!');
       },
       (error) => {
         console.log('FAILED...', error.text);
-      },meta.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY
+      },
       )
       .then(
         () => {
@@ -49,7 +50,7 @@ const Contacts = () => {
   };
 
   return (
-    <div id='contact' className="w-full h-screen bg-gradient-to-b from-black to-gray-800 text-white pb-8">
+    <div id='contact' className="w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-900 pb-8">
       {popupMessage && <Popup message={popupMessage} onClose={closePopup} />}
       <section >
         <div className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white pb-8">
@@ -81,7 +82,7 @@ const Contacts = () => {
               </div>
               <div className= "text-white mx-auto mb-12 text-center lg:mb-0">
                 <a
-                  href="https://maps.google.com/?q=Sector 22, Noida, 201301"
+                  href="PUT YOUR ADDRESS Here"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
