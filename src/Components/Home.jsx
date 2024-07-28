@@ -7,12 +7,13 @@ const HeroSection = () => {
     <section className="flex flex-col items-center justify-between h-auto bg-gradient-to-b from-black via-black to-gray-800 pt-5">
       <div className="flex flex-col md:gap-28 md:flex-row items-center justify-between w-full max-w-4xl p-5 md:p-10">
         <div className="mr-auto place-self-center lg:col-span-7">
-          <h1 className='text-2xl md:text-2xl font-bold text-indigo-600 dark:text-indigo-600 mb-2'>Aarti</h1>
+          <h1 className='text-5xl md:text-2xl font-bold text-indigo-600 dark:text-indigo-600 mb-2'>
+            Aarti</h1>
           <h1 className="text-2xl md:text-2xl font-bold text-indigo-600 dark:text-indigo-600 inline-block">
             <Typewriter
               options={{
                 strings: [
-                  "programmer",
+                  "Programmer",
                   "Web Developer",
                   "Open Source"
                 ],
