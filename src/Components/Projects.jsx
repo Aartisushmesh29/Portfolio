@@ -1,68 +1,53 @@
-import React from 'react';
-import ProjectDemo from './ProjectDemo';
-import img1 from '../assets/PROJ1.png';
-import img2 from '../assets/PROJ2.png';
-import img3 from '../assets/PROJ3.png';
+import React from "react";
+import img1 from "../assets/image.png";
+import img2 from "../assets/PROJ2.png";
+import img3 from "../assets/PROJ3.png";
+import ProjectDemo from "./ProjectDemo.jsx";
 
 const Projects = () => {
-
-  const projects = [
-    {
-      id:1,
-      src:img1
-
-    },
-    {
-      id:2,
-      src:img2
-
-    },
-    {
-      id:3,
-      src:img3
-
-    },
-    {
-      id:4,
-      src:img2
-
-    },
-    {
-      id:5,
-      src:img2
-
-    },
-  ]
   return (
-    <div id='project' className='flex h-auto pt-4 flex-col bg-gradient-to-b from-black to-gray-800 w-full text-white'>
-        <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center
-        w-full h-full'>
-          <div className='pb-8'>
-          <p className='text-4xl font-bold border-b-4
-             border-gray-500 p-2 inline'>Projects</p>
-          <p className='py-6'>Check out some of my work right here</p>
-          </div>
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0'>
-            {
-              projects.map(({id, src})=>(
-                <div  key={id} className='shadow-md shadow-gray-600 rounded-lg'>
-                <img src={src} alt="" className='rounded-md  hover:scale-105 duration-200' />
-                <div className='flex items-center justify-center'>
-                 <button className='w-1/2 px-6 py-3 m-4 durations-200 hover:scale-105'>Demo</button>
-                 <button className='w-1/2 px-6 py-3 m-4 durations-200 hover:scale-105'>Code</button>
-               </div>
-               </div>
-              )
-            )
-          }
-            </div>
+    <div className="w-full duration-300 bg-gradient-to-b from-black to-gray-800">
+      <div
+        className="max-w-screen-lg mx-auto p-4 flex flex-col 
+      justify-center w-full h-auto text-white"
+      >
+        <p
+          className="text-4xl ml-10 font-bold 
+            text-white border-gray-500  inline"
+        >
+          {" "}
+          Projects
+        </p>
+        <p className="ml-10 mt-4 text-white">
+          These are the Projects I've worked on.
+        </p>
 
-
-        
-
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-10">
+          <ProjectDemo
+            img={img1}
+            title="Glam-Gait: Shoe Site"
+            skills=" ReactJs , Node.js , MongoDb , ExpressJS , TailwindCSS , HTML , JavaScript , Postman "
+            live_link="#"
+            code_link="#"
+          />
+          <ProjectDemo
+            img={img2}
+            title="Image Search App"
+            skills=" ReactJs, TailwindCSS , HTML , JavaScript , Api Integration, Postman "
+            live_link="#"
+            code_link="#"
+          />
+          <ProjectDemo
+            img={img3}
+            title="Text-Editor"
+            skills="  HTML, CSS, JavaScript "
+            live_link="#"
+            code_link="#"
+          />
         </div>
+      </div>
     </div>
   );
-}
+};
 
 export default Projects;
