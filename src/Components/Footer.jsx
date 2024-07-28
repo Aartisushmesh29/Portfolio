@@ -1,6 +1,6 @@
 import React from 'react'
 import linkedin from "../assets/linkedin.webp"
-import github from "../assets/github.png"
+import github from "../assets/Github.jpg"
 import leetcode from "../assets/leetcode.webp"
 import codechef from "../assets/codechef_new.png"
 import MY_LOGO from "../assets/my_logo-new.png"
