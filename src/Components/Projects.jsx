@@ -24,12 +24,12 @@ const Projects = () => {
     },
     {
       id:4,
-      src:img3
+      src:img2
 
     },
     {
       id:5,
-      src:img3
+      src:img2
 
     },
   ]

@@ -23,7 +23,9 @@ const HeroSection = () => {
             />
           </h1>
           <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-            From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.
+          Hi, I'm an enthusiastic coder with a passion for programming, problem-solving, web development, and open source.
+           I love tackling challenging coding problems and creating responsive, user-friendly websites. My involvement in open source allows me to collaborate with other developers and contribute to impactful projects. 
+           I'm dedicated to continually learning and enhancing my skills to become a versatile developer.
           </p>
           {/* <a
             href="#"
