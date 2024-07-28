@@ -23,17 +23,19 @@ const Contacts = () => {
     e.preventDefault();
 
     emailjs
-    .sendForm( import.meta.env.VITE_REACT_APP_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID,
-      form.current,
-      import.meta.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY)
-    .then(
-      () => {
-        console.log('SUCCESS!');
-      },
-      (error) => {
-        console.log('FAILED...', error.text);
-      },
+      .sendForm(
+        import.meta.env.VITE_REACT_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
       )
       .then(
         () => {
@@ -50,10 +52,13 @@ const Contacts = () => {
   };
 
   return (
-    <div id='contact' className="w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-900 pb-8">
+    <div
+      id="contact"
+      className="w-full h-auto bg-gradient-to-b from-black to-gray-800 text-gray-900 pb-8"
+    >
       {popupMessage && <Popup message={popupMessage} onClose={closePopup} />}
-      <section >
-        <div className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white pb-8">
+      <section>
+        <div className="w-full h-auto bg-gradient-to-b from-black to-gray-800 p-4 text-white pb-8">
           <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
             <div className="flex flex-row justify-center mt-5 md:mb-5">
               <div className="text-white mx-auto mb-12 text-center lg:mb-0">
@@ -77,10 +82,11 @@ const Contacts = () => {
                     />
                   </svg>
                   <h6 className="font-medium dark:text-neutral-200 text-white">
-                    India</h6>
+                    India
+                  </h6>
                 </a>
               </div>
-              <div className= "text-white mx-auto mb-12 text-center lg:mb-0">
+              <div className="text-white mx-auto mb-12 text-center lg:mb-0">
                 <a
                   href="PUT YOUR ADDRESS Here"
                   target="_blank"
@@ -110,7 +116,7 @@ const Contacts = () => {
                   </h6>
                 </a>
               </div>
-              <div className= "text-white mx-auto mb-6 text-center md:mb-0">
+              <div className="text-white mx-auto mb-6 text-center md:mb-0">
                 <a
                   href="https://wa.me/917668663493"
                   target="_blank"
@@ -130,9 +136,7 @@ const Contacts = () => {
                       d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
                     />
                   </svg>
-                  <h6 className="font-medium text-white">
-                    +91 7668663493
-                  </h6>
+                  <h6 className="font-medium text-white">+91 7668663493</h6>
                 </a>
               </div>
             </div>
@@ -211,7 +215,7 @@ const Contacts = () => {
                     name="message"
                   ></textarea>
                 </div>
-                <div className= " mb-6 flex items-center justify-center">
+                <div className=" mb-6 flex items-center justify-center">
                   <input
                     type="submit"
                     value="Send"
@@ -223,13 +227,6 @@ const Contacts = () => {
           </div>
         </div>
       </section>
-     
-
-
-     
-
-
-
     </div>
   );
 };
