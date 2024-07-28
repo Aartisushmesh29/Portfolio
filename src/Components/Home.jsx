@@ -45,7 +45,7 @@ const HeroSection = () => {
            </a> */}
           <a
             href="https://docs.google.com/document/d/10yt_sEMvm8qbPV7kw84kQT71b490dnPHnHAakhtfUJ4/edit?usp=sharing"
-            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-300 border border-gray-300 rounded-lg hover:bg-gray-500 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
           >
             <button>Resume</button>
           </a>
