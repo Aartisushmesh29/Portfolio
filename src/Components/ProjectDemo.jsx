@@ -61,4 +61,3 @@ const ProjectDemo = ({ img, title, skills, live_link, code_link }) => {
     </div>
   );
 };
-export default ProjectDemo;
