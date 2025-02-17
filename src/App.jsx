@@ -6,6 +6,7 @@ import Projects from './Components/Projects'
 import Contacts from './Components/Contacts'
 import Experience from './Components/Experience'
 import Footer from './Components/Footer'
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
   return (
     <div>
       <Navbar />
+      <Analytics/>
       <Home />
       <Experience />
       <Projects />
